@@ -111,5 +111,12 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-
+## Status
+### Global
 [![Check out rkshaon's profile on stardev.io](https://stardev.io/developers/rkshaon/badge/languages/global.svg)](https://stardev.io/developers/rkshaon)
+
+### Country
+[![Check out rkshaon's profile on stardev.io](https://stardev.io/developers/rkshaon/badge/languages/country.svg)](https://stardev.io/developers/rkshaon)
+
+### Local
+[![Check out rkshaon's profile on stardev.io](https://stardev.io/developers/rkshaon/badge/languages/locality.svg)](https://stardev.io/developers/rkshaon)
