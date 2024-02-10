@@ -22,27 +22,22 @@
   <tr>
     <td><img height="30" src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"></td>
     <td>Python</td>
-    <td>From 2019</td>
   </tr>
   <tr>
     <td><img height="30" src="https://static.djangoproject.com/img/logo-django.42234b631760.svg"></td>
     <td>Django</td>
-    <td>From 2020</td>
   </tr>
   <tr>
     <td><img height="30" src="https://www.django-rest-framework.org/img/logo.png"></td>
     <td>Django Rest Framework</td>
-    <td>From 2020</td>
   </tr>
   <tr>
     <td><img height="30" src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png"></td>
     <td>PostgreSQL</td>
-    <td>From 2021</td>
   </tr>
   <tr>
     <td><img height="30" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"></td>
     <td>JavaScript</td>
-    <td>From 2018</td>
   </tr>
 </table>
 
