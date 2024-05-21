@@ -84,13 +84,7 @@ I have tried many more things too!
   </tr>  
 </table>
 
-## Available on
-<a href="https://www.linkedin.com/in/rkshaon"><img height="30" src="https://cdn-icons-png.flaticon.com/512/174/174857.png"></a>&nbsp;&nbsp;
-<a href="https://github.com/rkshaon"><img height="30" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></a>&nbsp;&nbsp;
-<a href="https://twitter.com/rkshaon97"><img height="30" src="https://cdn-icons-png.flaticon.com/512/124/124021.png"></a>&nbsp;&nbsp;
-<a href="https://www.facebook.com/rkshaon"><img height="30" src="https://cdn-icons-png.flaticon.com/512/124/124010.png"></a>&nbsp;&nbsp;
-<a href="https://www.instagram.com/rkshaon91"><img height="30" src="https://cdn-icons-png.flaticon.com/512/174/174855.png"></a>&nbsp;&nbsp;
-<a href="mailto:rkshaon.ist@gmail.com"><img height="30" src="https://cdn-icons-png.flaticon.com/512/281/281769.png"></a>&nbsp;&nbsp;
+
 
 <!--
 **rkshaon/rkshaon** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -107,6 +101,9 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 ## Status
+### Overall
+![rkshaon's github stats](https://github-readme-stats.vercel.app/api?username=rkshaon&show_icons=true&theme=dark)
+[![rkshaon's GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=rkshaon&theme=dark)](https://github.com/rkshaon?tab=repositories) |
 <!--
 ### Global
 [![Check out rkshaon's profile on stardev.io](https://stardev.io/developers/rkshaon/badge/languages/global.svg)](https://stardev.io/developers/rkshaon)
@@ -114,5 +111,13 @@ Here are some ideas to get you started:
 ### Country
 [![Check out rkshaon's profile on stardev.io](https://stardev.io/developers/rkshaon/badge/languages/country.svg)](https://stardev.io/developers/rkshaon)
 -->
-### Local
+### Local Ranking
 [![Check out rkshaon's profile on stardev.io](https://stardev.io/developers/rkshaon/badge/languages/locality.svg)](https://stardev.io/developers/rkshaon)
+
+## Available on
+<a href="https://www.linkedin.com/in/rkshaon"><img height="30" src="https://cdn-icons-png.flaticon.com/512/174/174857.png"></a>&nbsp;&nbsp;
+<a href="https://github.com/rkshaon"><img height="30" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></a>&nbsp;&nbsp;
+<a href="https://twitter.com/rkshaon97"><img height="30" src="https://cdn-icons-png.flaticon.com/512/124/124021.png"></a>&nbsp;&nbsp;
+<a href="https://www.facebook.com/rkshaon97"><img height="30" src="https://cdn-icons-png.flaticon.com/512/124/124010.png"></a>&nbsp;&nbsp;
+<a href="https://www.instagram.com/rkshaon97"><img height="30" src="https://cdn-icons-png.flaticon.com/512/174/174855.png"></a>&nbsp;&nbsp;
+<a href="mailto:rkshaon.ist@gmail.com"><img height="30" src="https://cdn-icons-png.flaticon.com/512/281/281769.png"></a>&nbsp;&nbsp;
