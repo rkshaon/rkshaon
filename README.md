@@ -110,9 +110,13 @@ Here are some ideas to get you started:
 
 ### Country
 [![Check out rkshaon's profile on stardev.io](https://stardev.io/developers/rkshaon/badge/languages/country.svg)](https://stardev.io/developers/rkshaon)
--->
+
 ### Local Ranking
 [![Check out rkshaon's profile on stardev.io](https://stardev.io/developers/rkshaon/badge/languages/locality.svg)](https://stardev.io/developers/rkshaon)
+-->
+
+### Country Ranking
+[![Check out rkshaon's profile on stardev.io](https://stardev.io/developers/rkshaon/badge/languages/country.svg)](https://stardev.io/developers/rkshaon)
 
 ## Available on
 <a href="https://www.linkedin.com/in/rkshaon"><img height="30" src="https://cdn-icons-png.flaticon.com/512/174/174857.png"></a>&nbsp;&nbsp;
