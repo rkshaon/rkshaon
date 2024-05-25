@@ -44,13 +44,19 @@
 I have tried many more things too!
 
 ## Notable works
-<table>  
+<table>
+  <tr>
+    <td>Software Engineering Preparation</td>
+    <td>
+      <a href="https://github.com/rkshaon/software-engineering-preparation" target="_blank">View the course</a>
+    </td>
+    <td>Collection of learning materials</td>
+  </tr>
   <tr>
     <td>ERP</td>
     <td>Not published yet</td>
     <td>Python, Django Rest Framework, Web Socket, PostgreSQL</td>
-  </tr>
-  
+  </tr>  
   <tr>
     <td>Accounting application</td>
     <td>Not published yet</td>
