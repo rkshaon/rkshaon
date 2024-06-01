@@ -1,0 +1,23 @@
+/portfolio/.DS_Store
+/portfolio/node_modules
+/portfolio/dist
+
+
+# local env files
+/portfolio/.env.local
+/portfolio/.env.*.local
+
+# Log files
+/portfolio/npm-debug.log*
+/portfolio/yarn-debug.log*
+/portfolio/yarn-error.log*
+/portfolio/pnpm-debug.log*
+
+# Editor directories and files
+/portfolio/.idea
+/portfolio/.vscode
+/portfolio/*.suo
+/portfolio/*.ntvs*
+/portfolio/*.njsproj
+/portfolio/*.sln
+/portfolio/*.sw?
