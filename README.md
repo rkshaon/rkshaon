@@ -52,16 +52,20 @@ I have tried many more things too!
     </td>
     <td>Collection of learning materials</td>
   </tr>
+  <!--   
   <tr>
     <td>ERP</td>
     <td>Not published yet</td>
     <td>Python, Django Rest Framework, Web Socket, PostgreSQL</td>
   </tr>  
+  -->
+  <!--   
   <tr>
     <td>Accounting application</td>
     <td>Not published yet</td>
     <td>Python, Django Rest Framework, Web Socket, Scheduler, Google APIs, PostgreSQL, pl/pgSQL</td>
-  </tr>
+  </tr> 
+  -->
   <tr>
     <td>Instagram Clone</td>
     <td><a target="_blank" href="https://github.com/rkshaon/django_instagram_clone">View code</a></td>
