@@ -1,5 +1,6 @@
 ![](https://komarev.com/ghpvc/?username=rkshaon)
 # Rezaul Karim Shaon, Backend Engineer @ [AGL](https://www.linkedin.com/company/algorithmgeneration/)
+### 👋 there, welcome to profile of [Rezaul Karim Shaon](https://www.linkedin.com/in/rkshaon) who is currently working as backend enginner.
 <!-- add what i do -->
 <!--add tech stack -->
 <!--
@@ -12,13 +13,13 @@ Tech Stack
 Languages: Python, Bash, SQL, and more.
 Tools: Docker, Kubernetes, Jenkins, Terraform, Ansible, and various cloud platforms (AWS, GCP, Azure).
 Frameworks: TensorFlow, PyTorch, and other machine learning frameworks.
--->
+
 ### 👋 there, welcome to profile of [Rezaul Karim Shaon](https://www.linkedin.com/in/rkshaon) who is currently working as backend enginner.
 
 ## GitHub Stats
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rkshaon&layout=compact)
-
+-->
 ## Overview
 <table>
   <tr>
