@@ -1,6 +1,6 @@
 <template>
     <div id="contact">
-        <div class="container mx-auto px-4 py-8">
+        <div class="container mx-auto px-4 py-32">
             <h2 class="text-4xl font-bold text-center mb-8">Get in Touch</h2>
             <div class="flex flex-col items-center space-y-4">
                 <!-- Contact Information -->
