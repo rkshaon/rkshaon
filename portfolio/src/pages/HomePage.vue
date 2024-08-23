@@ -2,7 +2,8 @@
   <div>
     <NavBarComponent />
     <BannerComponent />
-    <SliderComponent />
+    <!-- <SliderComponent /> -->
+    <AboutMe />
     <ProjectShowCaseComponent />
     <SkillsShowCaseComponent />
     <ContactAndSocialLinks />
@@ -12,7 +13,8 @@
 <script>
 import NavBarComponent from "@/components/NavBarComponent";
 import BannerComponent from "@/components/BannerComponent";
-import SliderComponent from "@/components/SliderComponent";
+// import SliderComponent from "@/components/SliderComponent";
+import AboutMe from "@/components/AboutMe";
 import ProjectShowCaseComponent from "@/components/ProjectShowCaseComponent";
 import SkillsShowCaseComponent from "@/components/SkillsShowCaseComponent";
 import ContactAndSocialLinks from "@/components/ContactAndSocialLinks";
@@ -23,7 +25,8 @@ export default {
   components: {
     NavBarComponent,
     BannerComponent,
-    SliderComponent,
+    // SliderComponent,
+    AboutMe,
     ProjectShowCaseComponent,
     SkillsShowCaseComponent,
     ContactAndSocialLinks,
