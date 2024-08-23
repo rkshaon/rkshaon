@@ -4,10 +4,9 @@
             <div class="flex flex-col lg:flex-row items-center">
                 <!-- Profile Image -->
                 <div class="flex-shrink-0 mb-8 lg:mb-0 lg:mr-8 w-48 h-48">
-                    <img src="path/to/your/profile-image.jpg" alt="Your Name"
+                    <img src="@/assets/project/project.jpg" alt="Your Name"
                         class="rounded-full w-full h-full object-cover">
                 </div>
-
                 <!-- About Me Content -->
                 <div>
                     <h2 class="text-4xl font-bold mb-4">About Me</h2>
