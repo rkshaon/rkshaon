@@ -1,6 +1,6 @@
 <template>
     <div id="projects">
-        <div class="container mx-auto px-4 py-8">
+        <div class="container mx-auto px-4 py-32">
             <h2 class="text-4xl font-bold text-center mb-8">My Projects</h2>
             <div class="grid gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
                 <div v-for="(project, index) in projects" :key="index"

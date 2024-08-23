@@ -1,6 +1,6 @@
 <template>
     <div id="skills">
-        <div class="container mx-auto px-4 py-8">
+        <div class="container mx-auto px-4 py-32">
             <h2 class="text-4xl font-bold text-center mb-8">My Skills</h2>
             <div class="grid gap-8 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
                 <div v-for="(skill, index) in skills" :key="index"
