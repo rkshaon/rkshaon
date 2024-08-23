@@ -4,6 +4,7 @@
     <BannerComponent />
     <SliderComponent />
     <ProjectShowCaseComponent />
+    <SkillsShowCaseComponent />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import NavBarComponent from "@/components/NavBarComponent";
 import BannerComponent from "@/components/BannerComponent";
 import SliderComponent from "@/components/SliderComponent";
 import ProjectShowCaseComponent from "@/components/ProjectShowCaseComponent";
+import SkillsShowCaseComponent from "@/components/SkillsShowCaseComponent";
 
 export default {
   name: 'HomePage',
@@ -21,6 +23,7 @@ export default {
     BannerComponent,
     SliderComponent,
     ProjectShowCaseComponent,
+    SkillsShowCaseComponent
   }
 }
 </script>
