@@ -1,16 +1,18 @@
 <template>
-    <div class="container mx-auto px-4 py-8">
-        <h2 class="text-4xl font-bold text-center mb-8">My Projects</h2>
-        <div class="grid gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
-            <div v-for="(project, index) in projects" :key="index"
-                class="bg-white shadow-lg rounded-lg overflow-hidden">
-                <img :src="project.image" :alt="project.title" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold mb-2">{{ project.title }}</h3>
-                    <p class="text-gray-700 mb-4">{{ project.description }}</p>
-                    <a :href="project.link" target="_blank" class="text-blue-500 hover:text-blue-700 font-semibold">
-                        View Project
-                    </a>
+    <div id="projects">
+        <div class="container mx-auto px-4 py-8">
+            <h2 class="text-4xl font-bold text-center mb-8">My Projects</h2>
+            <div class="grid gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+                <div v-for="(project, index) in projects" :key="index"
+                    class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img :src="project.image" :alt="project.title" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">{{ project.title }}</h3>
+                        <p class="text-gray-700 mb-4">{{ project.description }}</p>
+                        <a :href="project.link" target="_blank" class="text-blue-500 hover:text-blue-700 font-semibold">
+                            View Project
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
