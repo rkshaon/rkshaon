@@ -3,6 +3,7 @@
     <NavBarComponent />
     <BannerComponent />
     <SliderComponent />
+    <ProjectShowCaseComponent />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import NavBarComponent from "@/components/NavBarComponent";
 import BannerComponent from "@/components/BannerComponent";
 import SliderComponent from "@/components/SliderComponent";
+import ProjectShowCaseComponent from "@/components/ProjectShowCaseComponent";
 
 export default {
   name: 'HomePage',
@@ -18,6 +20,7 @@ export default {
     NavBarComponent,
     BannerComponent,
     SliderComponent,
+    ProjectShowCaseComponent,
   }
 }
 </script>
