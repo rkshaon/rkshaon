@@ -1,33 +1,38 @@
 <template>
     <nav
-        :class="['fixed top-0 left-0 w-full p-8 z-50 transition-colors duration-300', isScrolled ? 'bg-theme1' : 'bg-transparent']">
+        :class="['fixed top-0 left-0 w-full p-4 z-50 transition-colors duration-300', isScrolled ? 'bg-theme1' : 'bg-transparent']">
         <div class="container mx-auto flex justify-between items-center">
             <div class="text-white text-lg font-semibold">
-                <a href="#" class="hover:text-gray-300"></a>
+                <a href="#" class="hover:text-gray-300">
+                    <div class="flex-shrink-0 mb-8 lg:mb-0 lg:mr-8 w-16 h-16">
+                        <img src="@/assets/project/project.jpg" alt="Rezaul Karim Shaon"
+                            class="rounded-full w-full h-full object-cover">
+                    </div>
+                </a>
             </div>
             <div class="hidden md:flex space-x-4">
                 <a href="#about"
                     :class="[
-                    'px-4 py-3 font-semibold rounded-lg',
-                    isScrolled ? 'text-gray-300 hover:text-theme3' : 'text-theme3 hover:text-white bg-theme1 hover:bg-theme2']">
+                    'px-6 py-3 font-semibold rounded-lg',
+                    isScrolled ? 'text-gray-300 hover:text-theme3' : 'text-white hover:text-theme3 bg-theme2 hover:bg-theme1']">
                     About
                 </a>
                 <a href="#projects"
                     :class="[
-                    'px-4 py-3 font-semibold rounded-lg text-gray-300 hover:text-white',
-                    isScrolled ? 'text-gray-300 hover:text-theme3' : 'text-theme3 hover:text-white bg-theme1 hover:bg-theme2']">
+                    'px-6 py-3 font-semibold rounded-lg text-gray-300 hover:text-white',
+                    isScrolled ? 'text-gray-300 hover:text-theme3' : 'text-white hover:text-theme3 bg-theme2 hover:bg-theme1']">
                     Projects
                 </a>
                 <a href="#skills"
                     :class="[
-                    'px-4 py-3 font-semibold rounded-lg text-gray-300 hover:text-white',
-                    isScrolled ? 'text-gray-300 hover:text-theme3' : 'text-theme3 hover:text-white bg-theme1 hover:bg-theme2']">
+                    'px-6 py-3 font-semibold rounded-lg text-gray-300 hover:text-white',
+                    isScrolled ? 'text-gray-300 hover:text-theme3' : 'text-white hover:text-theme3 bg-theme2 hover:bg-theme1']">
                     Skills
                 </a>
                 <a href="#contact"
                     :class="[
-                    'px-4 py-3 font-semibold rounded-lg text-gray-300 hover:text-white',
-                    isScrolled ? 'text-gray-300 hover:text-theme3' : 'text-theme3 hover:text-white bg-theme1 hover:bg-theme2']">
+                    'px-6 py-3 font-semibold rounded-lg text-gray-300 hover:text-white',
+                    isScrolled ? 'text-gray-300 hover:text-theme3' : 'text-white hover:text-theme3 bg-theme2 hover:bg-theme1']">
                     Contact
                 </a>
             </div>
