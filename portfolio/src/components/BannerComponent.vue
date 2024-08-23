@@ -1,6 +1,6 @@
 <template>
     <div class="relative bg-gray-900 text-white h-96 flex items-center justify-center">
-        <img src="@/assets/custom-illustration.webp" alt="Background Image"
+        <img src="@/assets/banner/custom-illustration.webp" alt="Background Image"
             class="absolute inset-0 w-full h-full object-cover opacity-50" />
         <div class="relative z-10 text-center">
             <h1 class="text-4xl md:text-6xl font-bold">Hi, I'm Rezaul Karim Shaon</h1>

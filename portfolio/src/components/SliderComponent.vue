@@ -39,37 +39,37 @@ export default {
             currentIndex: 0,
             slides: [
                 {
-                    image: require('@/assets/abstract-lines.webp'),
+                    image: require('@/assets/banner/abstract-lines.webp'),
                     title: 'Abstract',
                     description: 'Description of Project 1',
                 },
                 {
-                    image: require('@/assets/abstract-tech.webp'),
+                    image: require('@/assets/banner/abstract-tech.webp'),
                     title: 'Abstract Tech',
                     description: 'Description of Project 2',
                 },
                 {
-                    image: require('@/assets/cityscrape.webp'),
+                    image: require('@/assets/banner/cityscrape.webp'),
                     title: 'City Scrape',
                     description: 'Description of Project 3',
                 },
                 {
-                    image: require('@/assets/codesnipet.webp'),
+                    image: require('@/assets/banner/codesnipet.webp'),
                     title: 'Code Snipet',
                     description: 'Description of Project 4',
                 },
                 {
-                    image: require('@/assets/custom-illustration.webp'),
+                    image: require('@/assets/banner/custom-illustration.webp'),
                     title: 'Illustration',
                     description: 'Description of Project 5',
                 },
                 {
-                    image: require('@/assets/software-engineer.webp'),
+                    image: require('@/assets/banner/software-engineer.webp'),
                     title: 'Software Engineer',
                     description: 'Description of Project 6',
                 },
                 {
-                    image: require('@/assets/workspace-setup.webp'),
+                    image: require('@/assets/banner/workspace-setup.webp'),
                     title: 'Workspace Setup',
                     description: 'Description of Project 7',
                 },
