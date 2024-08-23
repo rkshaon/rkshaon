@@ -2,12 +2,14 @@
   <div>
     <NavBarComponent />
     <BannerComponent />
+    <SliderComponent />
   </div>
 </template>
 
 <script>
 import NavBarComponent from "@/components/NavBarComponent";
 import BannerComponent from "@/components/BannerComponent";
+import SliderComponent from "@/components/SliderComponent";
 
 export default {
   name: 'HomePage',
@@ -15,6 +17,7 @@ export default {
   components: {
     NavBarComponent,
     BannerComponent,
+    SliderComponent,
   }
 }
 </script>
