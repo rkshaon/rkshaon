@@ -1,18 +1,22 @@
 <template>
-    <div id="projects">
-        <div class="container mx-auto px-4 py-32">
-            <h2 class="text-4xl font-bold text-center mb-8">My Projects</h2>
-            <div class="grid gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
-                <div v-for="(project, index) in projects" :key="index"
-                    class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img :src="project.image" :alt="project.title" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">{{ project.title }}</h3>
-                        <p class="text-gray-700 mb-4">{{ project.description }}</p>
-                        <a :href="project.link" target="_blank" class="text-blue-500 hover:text-blue-700 font-semibold">
-                            View Project
-                        </a>
-                    </div>
+    <div id="projects" class="container mx-auto px-4 py-32">
+        <h2 class="text-4xl font-bold text-center mb-8">Works</h2>
+        <div class="grid gap-10 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+            <div v-for="(project, index) in projects" :key="index"
+                class="relative bg-white shadow-xl rounded-xl overflow-hidden w-96 mx-auto">
+                <div class="absolute top-1/2 left-0 h-1/2 w-1.5 bg-theme1"></div>
+                <div class="absolute bottom-0 left-0 w-1/2 h-1.5 bg-theme1"></div>
+                <div class="absolute top-0 right-0 h-1/2 w-1.5 bg-theme1"></div>
+                <div class="absolute top-0 right-0 w-1/2 h-1.5 bg-theme1"></div>
+                <div class="flex justify-center p-6">
+                    <img :src="project.image" :alt="project.title" class="w-64 h-56 object-cover object-center">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">{{ project.title }}</h3>
+                    <p class="text-gray-700 mb-4">{{ project.description }}</p>
+                    <a :href="project.link" target="_blank" class="text-blue-500 hover:text-blue-700 font-semibold">
+                        View Project
+                    </a>
                 </div>
             </div>
         </div>
@@ -25,16 +29,16 @@ export default {
         return {
             projects: [
                 {
-                    title: 'Project 1',
-                    description: 'A brief description of Project 1.',
+                    title: 'Chat',
+                    description: 'The application for the real time chat text, audio, video based including personal, group.',
                     image: require('@/assets/project/project.jpg'),
-                    link: 'https://example.com/project1',
+                    link: 'https://github.com/rkshaon/chat/',
                 },
                 {
-                    title: 'Project 2',
+                    title: 'Blog',
                     description: 'A brief description of Project 2.',
                     image: require('@/assets/project/project.jpg'),
-                    link: 'https://example.com/project2',
+                    link: 'https://github.com/rkshaon/blog/',
                 },
                 {
                     title: 'Project 3',
@@ -67,5 +71,5 @@ export default {
 </script>
 
 <style scoped>
-/* Add any custom styles if needed */
+/* No additional custom styles are required if the theme color is defined in Tailwind's config */
 </style>
