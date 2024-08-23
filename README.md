@@ -1,8 +1,25 @@
 ![](https://komarev.com/ghpvc/?username=rkshaon)
 # Rezaul Karim Shaon, Backend Engineer @ [AGL](https://www.linkedin.com/company/algorithmgeneration/)
+### 👋 there, welcome to profile of [Rezaul Karim Shaon](https://www.linkedin.com/in/rkshaon) who is currently working as backend enginner.
+<!-- add what i do -->
+<!--add tech stack -->
+<!--
+What I Do
+DevOps: Building and maintaining scalable, reliable, and secure infrastructure.
+Data: Managing, processing, and extracting valuable insights from large datasets.
+MLOps: Streamlining the machine learning lifecycle to deploy and manage models efficiently.
+Linux: Extensive experience with Linux systems, from server management to automation.
+Tech Stack
+Languages: Python, Bash, SQL, and more.
+Tools: Docker, Kubernetes, Jenkins, Terraform, Ansible, and various cloud platforms (AWS, GCP, Azure).
+Frameworks: TensorFlow, PyTorch, and other machine learning frameworks.
 
 ### 👋 there, welcome to profile of [Rezaul Karim Shaon](https://www.linkedin.com/in/rkshaon) who is currently working as backend enginner.
 
+## GitHub Stats
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rkshaon&layout=compact)
+-->
 ## Overview
 <table>
   <tr>
@@ -52,16 +69,20 @@ I have tried many more things too!
     </td>
     <td>Collection of learning materials</td>
   </tr>
+  <!--   
   <tr>
     <td>ERP</td>
     <td>Not published yet</td>
     <td>Python, Django Rest Framework, Web Socket, PostgreSQL</td>
   </tr>  
+  -->
+  <!--   
   <tr>
     <td>Accounting application</td>
     <td>Not published yet</td>
     <td>Python, Django Rest Framework, Web Socket, Scheduler, Google APIs, PostgreSQL, pl/pgSQL</td>
-  </tr>
+  </tr> 
+  -->
   <tr>
     <td>Instagram Clone</td>
     <td><a target="_blank" href="https://github.com/rkshaon/django_instagram_clone">View code</a></td>
