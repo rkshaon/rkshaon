@@ -6,7 +6,7 @@
     <AboutMe />
     <ProjectShowCaseComponent />
     <SkillsShowCaseComponent />
-    <ContactAndSocialLinks />
+    <ContactComponent />
   </div>
 </template>
 
@@ -17,7 +17,7 @@ import BannerComponent from "@/components/BannerComponent";
 import AboutMe from "@/components/AboutMe";
 import ProjectShowCaseComponent from "@/components/ProjectShowCaseComponent";
 import SkillsShowCaseComponent from "@/components/SkillsShowCaseComponent";
-import ContactAndSocialLinks from "@/components/ContactAndSocialLinks";
+import ContactComponent from "@/components/ContactComponent";
 
 export default {
   name: 'HomePage',
@@ -29,7 +29,7 @@ export default {
     AboutMe,
     ProjectShowCaseComponent,
     SkillsShowCaseComponent,
-    ContactAndSocialLinks,
+    ContactComponent,
   }
 }
 </script>
