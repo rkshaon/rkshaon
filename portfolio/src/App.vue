@@ -1,15 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HomeComponent msg="Rezaul Karim Shaon" />
+  <div class="h-screen flex flex-col h-full">
+    <HomePage />
+  </div>
 </template>
 
 <script>
-import HomeComponent from './components/HomeComponent.vue'
+import HomePage from '@/pages/HomePage'
 
 export default {
   name: 'App',
   components: {
-    HomeComponent
+    HomePage
   }
 }
 </script>
@@ -19,8 +20,5 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
