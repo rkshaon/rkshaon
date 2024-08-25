@@ -28,28 +28,28 @@
                 </div>
                 <!-- Right Part: Contact Form -->
                 <div class="lg:w-1/2 mt-8 lg:mt-0">
-                    <form @submit.prevent="submitForm" class="bg-white shadow-md rounded-xl px-8 pt-6 pb-8 mb-4 bg-theme3">
+                    <form @submit.prevent="submitForm" class="shadow-md rounded-xl px-8 pt-6 pb-8 mb-4 bg-theme2">
                         <div class="mb-4">
-                            <label class="block text-theme1 text-sm font-bold mb-2" for="name">Name</label>
+                            <label class="block text-theme3 text-sm font-bold mb-2" for="name">Name</label>
                             <input v-model="form.name" type="text" id="name" placeholder="Your name"
                                 class="shadow appearance-none border rounded-xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 required>
                         </div>
                         <div class="mb-4">
-                            <label class="block text-theme1 text-sm font-bold mb-2" for="email">Email</label>
+                            <label class="block text-theme3 text-sm font-bold mb-2" for="email">Email</label>
                             <input v-model="form.email" type="email" id="email" placeholder="Your email"
                                 class="shadow appearance-none border rounded-xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 required>
                         </div>
                         <div class="mb-6">
-                            <label class="block text-theme1 text-sm font-bold mb-2" for="message">Message</label>
+                            <label class="block text-theme3 text-sm font-bold mb-2" for="message">Message</label>
                             <textarea v-model="form.message" id="message" placeholder="Your message"
                                 class="shadow appearance-none border rounded-xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 required></textarea>
                         </div>
                         <div class="flex items-center justify-between">
                             <button type="submit"
-                                class="bg-theme2 hover:bg-blue-700 text-theme3 font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline">
+                                class="bg-theme1 hover:bg-theme3 hover:text-theme1 text-theme3 font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline">
                                 Send Message
                             </button>
                         </div>

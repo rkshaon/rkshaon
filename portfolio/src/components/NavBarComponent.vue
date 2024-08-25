@@ -11,29 +11,11 @@
                 </a>
             </div>
             <div class="hidden md:flex space-x-4">
-                <a href="#about"
+                <a v-for="(nav, index) in navs" :key="index" :href="nav.link"
                     :class="[
-                    'px-6 py-3 font-semibold rounded-lg',
-                    isScrolled ? 'text-gray-300 hover:text-theme3' : 'text-white hover:text-theme3 bg-theme2 hover:bg-theme1']">
-                    About
-                </a>
-                <a href="#projects"
-                    :class="[
-                    'px-6 py-3 font-semibold rounded-lg text-gray-300 hover:text-white',
-                    isScrolled ? 'text-gray-300 hover:text-theme3' : 'text-white hover:text-theme3 bg-theme2 hover:bg-theme1']">
-                    Projects
-                </a>
-                <a href="#skills"
-                    :class="[
-                    'px-6 py-3 font-semibold rounded-lg text-gray-300 hover:text-white',
-                    isScrolled ? 'text-gray-300 hover:text-theme3' : 'text-white hover:text-theme3 bg-theme2 hover:bg-theme1']">
-                    Skills
-                </a>
-                <a href="#contact"
-                    :class="[
-                    'px-6 py-3 font-semibold rounded-lg text-gray-300 hover:text-white',
-                    isScrolled ? 'text-gray-300 hover:text-theme3' : 'text-white hover:text-theme3 bg-theme2 hover:bg-theme1']">
-                    Contact
+                        'px-6 py-3 font-semibold rounded-lg',
+                        isScrolled ? 'text-gray-300 hover:bg-theme2 hover:text-theme3' : 'text-white hover:text-theme3 bg-theme2 hover:bg-theme1']">
+                    {{ nav.name }}
                 </a>
             </div>
             <div class="md:hidden">
@@ -63,6 +45,24 @@ export default {
         return {
             isMenuOpen: false,
             isScrolled: false,
+            navs: [
+                {
+                    name: 'About',
+                    link: '#about',
+                },
+                {
+                    name: 'Projects',
+                    link: '#projects',
+                },
+                {
+                    name: 'Skills',
+                    link: '#skills',
+                },
+                {
+                    name: 'Contact',
+                    link: '#contact',
+                },
+            ],
         };
     },
     methods: {
