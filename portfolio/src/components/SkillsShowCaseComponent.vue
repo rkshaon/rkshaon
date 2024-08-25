@@ -53,17 +53,6 @@ export default {
                     icon: require('@/assets/icons/postgresql.png'),
                     description: 'Database',
                 },
-                // {
-                //     name: 'Tailwind CSS',
-                //     level: 'Intermediate',
-                //     // icon: require('@/assets/tailwind-icon.svg'),
-                // },
-                // {
-                //     name: 'Node.js',
-                //     level: 'Intermediate',
-                //     // icon: require('@/assets/node-icon.svg'),
-                // },
-
                 {
                     name: 'Git',
                     description: 'Version Control System',
