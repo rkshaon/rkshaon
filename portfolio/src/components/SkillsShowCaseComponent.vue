@@ -2,10 +2,9 @@
     <div id="skills" class="container mx-auto px-4 py-32">
         <h2 class="text-4xl font-bold text-center mb-8">Work Experience on</h2>
         <div class="grid gap-8 lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2">
-            <div v-for="(skill, index) in skills" :key="index" class="bg-white shadow-lg rounded-lg p-6 text-center">
+            <div v-for="(skill, index) in skills" :key="index" class="bg-gray-200 shadow-lg rounded-lg p-6 text-center">
                 <img :src="skill.icon" :alt="skill.name" class="w-16 h-16 mx-auto mb-4">
-                <h3 class="text-xl font-semibold mb-2">{{ skill.name }}</h3>
-                <!-- <p class="text-gray-700">{{ skill.level }}</p> -->
+                <h3 class="text-xl font-semibold mb-2 text-gray-700">{{ skill.name }}</h3>
                 <p v-if="skill.description" class="text-gray-700">{{ skill.description }}</p>
                 <p v-else class="text-gray-700">No description provided.</p>
             </div>

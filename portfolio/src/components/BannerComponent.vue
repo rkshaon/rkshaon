@@ -1,7 +1,7 @@
 <template>
     <div class="relative bg-gray-900 text-white h-screen flex items-center justify-center">
         <img src="@/assets/banner/codesnipet.webp" alt="Background Image"
-            class="absolute inset-0 w-full h-full object-cover opacity-50" />
+            class="absolute inset-0 w-full h-full object-cover opacity-30" />
         <div class="relative z-10 text-center">
             <h1 class="text-4xl md:text-6xl" style="">👋, <br>I'm <i class="font-bold">Rezaul Karim
                     Shaon</i></h1>
