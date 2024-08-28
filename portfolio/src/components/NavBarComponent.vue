@@ -3,15 +3,15 @@
         :class="['fixed top-0 left-0 w-full p-4 z-50 transition-colors duration-300', isScrolled ? 'bg-theme1' : 'bg-transparent']">
         <div class="container mx-auto flex justify-between items-center">
             <div class="text-white text-lg font-semibold">
-                <a href="#" class="hover:text-gray-300">
+                <a v-if="isScrolled" href="#" class="hover:text-gray-300">
                     <div class="flex-shrink-0 mb-8 lg:mb-0 lg:mr-8 w-16 h-16">
-                        <img src="@/assets/project/project.jpg" alt="Rezaul Karim Shaon"
+                        <img @click="setTitle()" src="@/assets/project/project.jpg" alt="Rezaul Karim Shaon"
                             class="rounded-full w-full h-full object-cover">
                     </div>
                 </a>
             </div>
             <div class="hidden md:flex space-x-4">
-                <a v-for="(nav, index) in navs" :key="index" :href="nav.link"
+                <a v-for="(nav, index) in navs" :key="index" :href="nav.link" @click="setTitle(nav.name)"
                     :class="[
                         'px-6 py-3 font-semibold rounded-lg',
                         isScrolled ? 'text-gray-300 hover:bg-theme2 hover:text-theme3' : 'text-white hover:text-theme3 bg-theme2 hover:bg-theme1']">
@@ -71,10 +71,19 @@ export default {
         },
         handleScroll() {
             this.isScrolled = window.scrollY > ((window.innerHeight / 4) * 3);
-        }
+        },
+        setTitle(section=null) {
+            if (section) {
+                document.title = `${section} | Rezaul Karim Shaon`;
+            }
+            else {
+                document.title = "Rezaul Karim Shaon";
+            }
+        },
     },
     mounted() {
         window.addEventListener('scroll', this.handleScroll);
+        this.setTitle();
     },
     beforeUnmount() {
         window.removeEventListener('scroll', this.handleScroll);
