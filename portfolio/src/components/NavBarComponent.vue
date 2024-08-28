@@ -3,7 +3,7 @@
         :class="['fixed top-0 left-0 w-full p-4 z-50 transition-colors duration-300', isScrolled ? 'bg-theme1' : 'bg-transparent']">
         <div class="container mx-auto flex justify-between items-center">
             <div class="text-white text-lg font-semibold">
-                <a href="#" class="hover:text-gray-300">
+                <a v-if="isScrolled" href="#" class="hover:text-gray-300">
                     <div class="flex-shrink-0 mb-8 lg:mb-0 lg:mr-8 w-16 h-16">
                         <img src="@/assets/project/project.jpg" alt="Rezaul Karim Shaon"
                             class="rounded-full w-full h-full object-cover">
