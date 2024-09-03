@@ -131,8 +131,17 @@ Here are some ideas to get you started:
 ### Overall
 <!--
 ![rkshaon's github stats](https://github-readme-stats.vercel.app/api?username=rkshaon&show_icons=true&theme=dark)
+![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=rkshaon&theme=apprentice)
+![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=rkshaon&theme=apprentice)
 -->
+[![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=rkshaon&theme=apprentice)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+
+### Active Hours
+![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=rkshaon&theme=apprentice&utcOffset=6) 
+
+### Current Streak
 [![rkshaon's GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=rkshaon&theme=dark)](https://github.com/rkshaon?tab=repositories)
+
 
 <!--
 ### Global
