@@ -37,25 +37,22 @@ jobs:
         SSH_HOST: ${{ secrets.SSH_HOST }}
         SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
       run: |
-        # Start the SSH agent
         eval $(ssh-agent -s)
-        
-        # Create the SSH directory and set proper permissions
         mkdir -p ~/.ssh
-        chmod 700 ~/.ssh
-
-        # Add the SSH private key
         echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
-
+        
         # Disable host key checking to avoid interactive prompts
         echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+        
+        # Add the GitHub host key to known hosts (optional, for safety)
+        ssh-keyscan $SSH_HOST >> ~/.ssh/known_hosts
 
-        # Step 1: SSH into the server and navigate to the root directory of the project
+        # Step 1: SSH into the server and perform the deployment
         ssh -o StrictHostKeyChecking=no $SSH_USERNAME@$SSH_HOST "
         git config --global --add safe.directory /var/www/rkshaon.info &&  # Mark the directory as safe
-        cd /var/www/rkshaon.info && 
-        git pull origin main && 
-        cd frontend && 
-        npm install && 
+        cd /var/www/rkshaon.info &&
+        git pull origin main &&
+        cd frontend &&
+        npm install &&
         npm run build
         "
