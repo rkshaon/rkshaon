@@ -31,43 +31,46 @@ jobs:
         cd frontend         # Navigate to the frontend directory
         npm run build       # Run the build process
 
-    - name: Add GitHub to known hosts
-      run: |
-        mkdir -p ~/.ssh
-        ssh-keyscan github.com >> ~/.ssh/known_hosts
+    # - name: Add GitHub to known hosts
+    #   run: |
+    #     mkdir -p ~/.ssh
+    #     ssh-keyscan github.com >> ~/.ssh/known_hosts
 
-    - name: Start SSH agent and add private key
-      run: |
-        eval $(ssh-agent -s)
-        echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+    # - name: Start SSH agent and add private key
+    #   run: |
+    #     eval $(ssh-agent -s)
+    #     echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    #   env:
+    #     SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
 
-    - name: Set correct SSH permissions
-      run: |
-        chmod 700 ~/.ssh
-        chmod 644 ~/.ssh/known_hosts
+    # - name: Set correct SSH permissions
+    #   run: |
+    #     chmod 700 ~/.ssh
+    #     chmod 644 ~/.ssh/known_hosts
 
     - name: Deploy to server
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         SSH_HOST: ${{ secrets.SSH_HOST }}
         SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
+        SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }} # Add the password
       run: |
-        # Ensure SSH key has been added
-        ssh-add -l  # List added identities for debugging
-
-        # Add the server's SSH key to known hosts to avoid host verification failure
+        # Start the SSH agent
+        eval $(ssh-agent -s)
+        
+        # Add the SSH private key
+        echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+        
+        # Add the server's SSH key to known hosts
+        mkdir -p ~/.ssh
         ssh-keyscan -H $SSH_HOST >> ~/.ssh/known_hosts
-        echo "Known hosts:"
-        cat ~/.ssh/known_hosts  # Display known hosts for debugging
-
-        # Step 1: SSH into the server and perform the deployment
+        
+        # SSH into the server and run commands with 'sudo' using password
         ssh -vvv -o StrictHostKeyChecking=no $SSH_USERNAME@$SSH_HOST "
-        git config --global --add safe.directory /var/www/rkshaon.info &&
+        echo '$SSH_PASSWORD' | sudo -S git config --global --add safe.directory /var/www/rkshaon.info &&
         cd /var/www/rkshaon.info &&
-        git pull origin main &&
+        echo '$SSH_PASSWORD' | sudo -S git pull origin main &&
         cd frontend &&
-        npm install &&
-        npm run build
+        echo '$SSH_PASSWORD' | sudo -S npm install &&
+        echo '$SSH_PASSWORD' | sudo -S npm run build
         "
