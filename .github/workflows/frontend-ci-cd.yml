@@ -31,6 +31,23 @@ jobs:
         cd frontend         # Navigate to the frontend directory
         npm run build       # Run the build process
 
+    - name: Add GitHub to known hosts
+      run: |
+        mkdir -p ~/.ssh
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+    - name: Start SSH agent and add private key
+      run: |
+        eval $(ssh-agent -s)
+        echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+
+    - name: Set correct SSH permissions
+      run: |
+        chmod 700 ~/.ssh
+        chmod 644 ~/.ssh/known_hosts
+
     - name: Deploy to server
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
