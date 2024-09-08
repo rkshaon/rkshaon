@@ -54,25 +54,13 @@ jobs:
         SSH_HOST: ${{ secrets.SSH_HOST }}
         SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
       run: |
-        # Start the SSH agent
-        # Start the SSH agent
-        eval $(ssh-agent -s)
-        mkdir -p ~/.ssh
-        chmod 700 ~/.ssh
+        # Ensure SSH key has been added
+        ssh-add -l  # List added identities for debugging
 
-        # Add the SSH private key
-        echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
-        
         # Add the server's SSH key to known hosts to avoid host verification failure
         ssh-keyscan -H $SSH_HOST >> ~/.ssh/known_hosts
         echo "Known hosts:"
         cat ~/.ssh/known_hosts  # Display known hosts for debugging
-
-        # Ensure SSH key has been added
-        ssh-add -l  # List added identities for debugging
-
-        # Disable strict host key checking (backup option)
-        echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 
         # Step 1: SSH into the server and perform the deployment
         ssh -vvv -o StrictHostKeyChecking=no $SSH_USERNAME@$SSH_HOST "
