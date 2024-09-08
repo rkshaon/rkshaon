@@ -38,6 +38,7 @@ jobs:
         SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
       run: |
         # Start the SSH agent
+        # Start the SSH agent
         eval $(ssh-agent -s)
         mkdir -p ~/.ssh
         chmod 700 ~/.ssh
@@ -47,13 +48,18 @@ jobs:
         
         # Add the server's SSH key to known hosts to avoid host verification failure
         ssh-keyscan -H $SSH_HOST >> ~/.ssh/known_hosts
-        
-        # Disable strict host key checking (as a backup, if keyscan doesn't work)
+        echo "Known hosts:"
+        cat ~/.ssh/known_hosts  # Display known hosts for debugging
+
+        # Ensure SSH key has been added
+        ssh-add -l  # List added identities for debugging
+
+        # Disable strict host key checking (backup option)
         echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 
-        # Step 1: SSH into the server and deploy the code
-        ssh -o StrictHostKeyChecking=no $SSH_USERNAME@$SSH_HOST "
-        git config --global --add safe.directory /var/www/rkshaon.info &&  # Mark the directory as safe
+        # Step 1: SSH into the server and perform the deployment
+        ssh -vvv -o StrictHostKeyChecking=no $SSH_USERNAME@$SSH_HOST "
+        git config --global --add safe.directory /var/www/rkshaon.info &&
         cd /var/www/rkshaon.info &&
         git pull origin main &&
         cd frontend &&
