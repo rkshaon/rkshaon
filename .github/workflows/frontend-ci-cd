@@ -1,0 +1,89 @@
+name: Frontend CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    # Checkout the code
+    - name: Checkout the code
+      uses: actions/checkout@v2
+
+    # Set up Node.js
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18'
+
+    # Install dependencies
+    - name: Install dependencies
+      run: |
+        cd frontend         # Navigate to the frontend directory
+        npm install         # Install dependencies
+
+    # Run build
+    - name: Run build
+      run: |
+        cd frontend         # Navigate to the frontend directory
+        npm run build       # Run the build process
+
+    # Add GitHub to known hosts
+    - name: Add GitHub to known hosts
+      run: |
+        mkdir -p ~/.ssh
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+    # Start SSH agent and add private key
+    - name: Start SSH agent and add private key
+      run: |
+        eval $(ssh-agent -s)
+        echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+
+    # Set correct SSH permissions
+    - name: Set correct SSH permissions
+      run: |
+        chmod 700 ~/.ssh
+        chmod 644 ~/.ssh/known_hosts
+
+    # Deploy to server
+    - name: Deploy to server
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        SSH_HOST: ${{ secrets.SSH_HOST }}
+        SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
+      run: |
+        # Start the SSH agent
+        eval $(ssh-agent -s)
+        mkdir -p ~/.ssh
+        chmod 700 ~/.ssh
+
+        # Add the SSH private key
+        echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+        
+        # Add the server's SSH key to known hosts to avoid host verification failure
+        ssh-keyscan -H $SSH_HOST >> ~/.ssh/known_hosts
+        echo "Known hosts:"
+        cat ~/.ssh/known_hosts  # Display known hosts for debugging
+
+        # Disable strict host key checking (backup option)
+        echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+
+        # Step 1: SSH into the server and perform the deployment
+        ssh -o StrictHostKeyChecking=no $SSH_USERNAME@$SSH_HOST "
+        sudo git config --global --add safe.directory /var/www/rkshaon.info &&
+        cd /var/www/rkshaon.info &&
+        sudo git pull origin main &&
+        cd frontend &&
+        sudo npm install &&
+        sudo npm run build
+        "
