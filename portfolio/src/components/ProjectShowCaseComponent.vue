@@ -29,40 +29,28 @@ export default {
         return {
             projects: [
                 {
+                    title: 'BookShelf',
+                    description: 'BookShelf is a web application that offers a centralized platform for reading and storing various digital documents. Explore a vast collection of files, organized for easy browsing and discovery.',
+                    image: require('@/assets/icons/github-logo.png'),
+                    link: 'https://github.com/rkshaon/BookShelf',
+                },
+                {
                     title: 'Chat',
-                    description: 'The application for the real time chat text, audio, video based including personal, group.',
-                    image: require('@/assets/project/project.jpg'),
-                    link: 'https://github.com/rkshaon/chat/',
+                    description: 'Real time chatting application.',
+                    image: require('@/assets/icons/github-logo.png'),
+                    link: 'https://github.com/rkshaon/chat',
                 },
                 {
                     title: 'Blog',
-                    description: 'A brief description of Project 2.',
-                    image: require('@/assets/project/project.jpg'),
-                    link: 'https://github.com/rkshaon/blog/',
+                    description: 'This repository is the code of The Blog project.',
+                    image: require('@/assets/icons/github-logo.png'),
+                    link: 'https://github.com/rkshaon/blog',
                 },
                 {
-                    title: 'Project 3',
-                    description: 'A brief description of Project 3.',
-                    image: require('@/assets/project/project.jpg'),
-                    link: 'https://example.com/project3',
-                },
-                {
-                    title: 'Project 4',
-                    description: 'A brief description of Project 4.',
-                    image: require('@/assets/project/project.jpg'),
-                    link: 'https://example.com/project4',
-                },
-                {
-                    title: 'Project 5',
-                    description: 'A brief description of Project 5.',
-                    image: require('@/assets/project/project.jpg'),
-                    link: 'https://example.com/project5',
-                },
-                {
-                    title: 'Project 6',
-                    description: 'A brief description of Project 6.',
-                    image: require('@/assets/project/project.jpg'),
-                    link: 'https://example.com/project6',
+                    title: 'E-Commerce',
+                    description: 'E-Commerce platform with all solutions.',
+                    image: require('@/assets/icons/github-logo.png'),
+                    link: 'https://github.com/rkshaon/ecommerce',
                 },
             ],
         };
