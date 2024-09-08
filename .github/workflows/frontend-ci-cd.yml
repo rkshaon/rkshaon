@@ -26,14 +26,14 @@ jobs:
     # Install dependencies
     - name: Install dependencies
       run: |
-        cd frontend         # Navigate to the frontend directory
-        npm install         # Install dependencies
+        cd frontend
+        npm install
 
     # Run build
     - name: Run build
       run: |
-        cd frontend         # Navigate to the frontend directory
-        npm run build       # Run the build process
+        cd frontend
+        npm run build
 
     # Add GitHub to known hosts
     - name: Add GitHub to known hosts
@@ -55,6 +55,10 @@ jobs:
         chmod 700 ~/.ssh
         chmod 644 ~/.ssh/known_hosts
 
+    # Debugging SSH keys
+    - name: Debugging SSH Keys
+      run: ssh-add -l
+
     # Deploy to server
     - name: Deploy to server
       env:
@@ -70,20 +74,15 @@ jobs:
         # Add the SSH private key
         echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
         
-        # Add the server's SSH key to known hosts to avoid host verification failure
+        # Add the server's SSH key to known hosts
         ssh-keyscan -H $SSH_HOST >> ~/.ssh/known_hosts
-        echo "Known hosts:"
-        cat ~/.ssh/known_hosts  # Display known hosts for debugging
 
-        # Disable strict host key checking (backup option)
-        echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-
-        # Step 1: SSH into the server and perform the deployment
-        ssh -o StrictHostKeyChecking=no $SSH_USERNAME@$SSH_HOST "
-        sudo git config --global --add safe.directory /var/www/rkshaon.info &&
-        cd /var/www/rkshaon.info &&
-        sudo git pull origin main &&
-        cd frontend &&
-        sudo npm install &&
-        sudo npm run build
+        # SSH and deployment with sudo
+        ssh -vvv -o StrictHostKeyChecking=no $SSH_USERNAME@$SSH_HOST "
+          sudo git config --global --add safe.directory /var/www/rkshaon.info &&
+          cd /var/www/rkshaon.info &&
+          sudo git pull origin main &&
+          cd frontend &&
+          sudo npm install &&
+          sudo npm run build
         "
