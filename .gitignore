@@ -1,23 +1,23 @@
-/portfolio/.DS_Store
-/portfolio/node_modules
-/portfolio/dist
+/frontend/.DS_Store
+/frontend/node_modules
+/frontend/dist
 
 
 # local env files
-/portfolio/.env.local
-/portfolio/.env.*.local
+/frontend/.env.local
+/frontend/.env.*.local
 
 # Log files
-/portfolio/npm-debug.log*
-/portfolio/yarn-debug.log*
-/portfolio/yarn-error.log*
-/portfolio/pnpm-debug.log*
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+/frontend/pnpm-debug.log*
 
 # Editor directories and files
-/portfolio/.idea
-/portfolio/.vscode
-/portfolio/*.suo
-/portfolio/*.ntvs*
-/portfolio/*.njsproj
-/portfolio/*.sln
-/portfolio/*.sw?
+/frontend/.idea
+/frontend/.vscode
+/frontend/*.suo
+/frontend/*.ntvs*
+/frontend/*.njsproj
+/frontend/*.sln
+/frontend/*.sw?
