@@ -52,6 +52,7 @@ jobs:
 
         # Step 1: SSH into the server and navigate to the root directory of the project
         ssh -o StrictHostKeyChecking=no $SSH_USERNAME@$SSH_HOST "
+        git config --global --add safe.directory /var/www/rkshaon.info &&  # Mark the directory as safe
         cd /var/www/rkshaon.info && 
         git pull origin main && 
         cd frontend && 
