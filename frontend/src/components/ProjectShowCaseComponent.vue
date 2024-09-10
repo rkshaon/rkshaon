@@ -32,7 +32,7 @@ export default {
                     title: 'BookShelf',
                     description: 'BookShelf is a web application that offers a centralized platform for reading and storing various digital documents. Explore a vast collection of files, organized for easy browsing and discovery.',
                     image: require('@/assets/icons/github-logo.png'),
-                    link: 'https://github.com/rkshaon/BookShelf',
+                    link: 'https://bookshelf.rkshaon.info/',
                 },
                 {
                     title: 'Chat',
