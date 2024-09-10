@@ -17,6 +17,7 @@ sudo git pull origin master
 echo -e "${BLUE}Navigate to the FRONTEND directory${RESET}"
 echo -e "${YELLOW}=======================================${RESET}"
 cd /var/www/rkshaon.info/frontend
+pwd
 
 echo -e "${BLUE}Install Dependencies${RESET}"
 echo -e "${YELLOW}=======================================${RESET}"
