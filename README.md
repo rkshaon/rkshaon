@@ -1,6 +1,6 @@
 ![](https://komarev.com/ghpvc/?username=rkshaon)
 # Rezaul Karim Shaon, Backend Engineer @ [Pflegetech GmbH](https://www.linkedin.com/company/pflegetech/)
-### 👋 there, welcome to profile of [Rezaul Karim Shaon](https://www.linkedin.com/in/rkshaon) who is currently working as backend team lead.
+### 👋 there, welcome to profile of [Rezaul Karim Shaon](https://www.linkedin.com/in/rkshaon) who is currently working as senior backend developer.
 <!-- add what i do -->
 <!--add tech stack -->
 <!--
