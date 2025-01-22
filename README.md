@@ -143,8 +143,9 @@ Here are some ideas to get you started:
 [![rkshaon's GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=rkshaon&theme=dark)](https://github.com/rkshaon?tab=repositories)
 
 ### Activity Graph
-![](https://github-readme-activity-graph.vercel.app/graph?username=rkshaon&theme=xcode&hide_border=true) 
-
+<a href="https://github.com/rkshaon/">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=rkshaon&theme=xcode&hide_border=true" alt="Activity graph">
+</a>
 <!--
 ### Global
 [![Check out rkshaon's profile on stardev.io](https://stardev.io/developers/rkshaon/badge/languages/global.svg)](https://stardev.io/developers/rkshaon)
