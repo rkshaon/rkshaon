@@ -142,6 +142,8 @@ Here are some ideas to get you started:
 ### Current Streak
 [![rkshaon's GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=rkshaon&theme=dark)](https://github.com/rkshaon?tab=repositories)
 
+### Activity Graph
+![](https://github-readme-activity-graph.vercel.app/graph?username=rkshaon&theme=xcode&hide_border=true) 
 
 <!--
 ### Global
