@@ -1,6 +1,6 @@
 ![](https://komarev.com/ghpvc/?username=rkshaon)
 # Rezaul Karim Shaon, Backend Engineer @ [Pflegetech GmbH](https://www.linkedin.com/company/pflegetech/)
-### 👋 there, welcome to profile of [Rezaul Karim Shaon](https://www.linkedin.com/in/rkshaon) who is currently working as senior backend developer.
+### 👋 there, welcome to profile of [Rezaul Karim Shaon](https://www.linkedin.com/in/rkshaon) who is currently working as backend developer.
 <!-- add what i do -->
 <!--add tech stack -->
 <!--
@@ -25,7 +25,7 @@ Frameworks: TensorFlow, PyTorch, and other machine learning frameworks.
   <tr>
     <td><img width="180" src="https://media.tenor.com/3nKnLBtsMtcAAAAC/coding-code.gif"></td>
     <td>
-      I'm building high-performance Health ERP application's APIs by using Python, Django, PostgreSQL.
+      I'm building high-performance AI ChatBot using Python, Django, DRF, WebSocket, MongoDB.
       <br><br>
       As an engineer I try to write readable, comparatively correct, reliable, reusable, extensible, flexible, efficient code. I like to learn new stuff, and always looking for an opportunity and environment of learning scopes. I am a fast learner.
       <br><br>I am good at analyzing requirements, design interactive applications based on requirements.
